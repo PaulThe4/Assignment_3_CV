@@ -1,6 +1,6 @@
 # Assignment_3_CV
 
-This repository contains the solutions for the assignment comprising various computer vision tasks. Below are the details of each problem along with the corresponding files.
+This repository contains the solutions for the assignment comprising various computer vision tasks. Below are the details of each problem.
 
 Problem 1: Object Matching in Video Footage
 
@@ -10,7 +10,6 @@ Picked an image frame from the video and selected a region of interest correspon
 Cropped the region and compared it with 10 randomly picked images from other frames appended from the video using SSD or normalized correlation.
 Files:
 Object_Video.mp4: The video of the object.
-ROI.py: Region of interest
 Dataset: 10-second video frames dataset.
 
 
@@ -20,9 +19,7 @@ Description:
 Derived the motion tracking equation from fundamental principles.
 Computed motion function estimates using 2 consecutive frames from the dataset.
 Derived the procedure for performing Lucas-Kanade algorithm for affine motion tracking.
-Files:
-MotionTrackingEquation.pdf: Handwritten or typed derivation of the motion tracking equation.
-LucasKanadeAlgorithm.pdf: Handwritten or typed derivation of the Lucas-Kanade algorithm procedure.
+
 
 
 Problem 3: Disparity-Based Depth Estimation
@@ -31,9 +28,6 @@ Description:
 Fixed a marker on a wall or flat vertical surface and captured an image from distance D.
 Translated the camera horizontally by T units and captured another image.
 Computed D using disparity-based depth estimation in stereo-vision theory.
-Files:
-DepthEstimation.py: Python script for disparity-based depth estimation.
-Images: Captured images for computing D.
 
 
 Problem 4: Optical Flow Visualization
@@ -41,18 +35,12 @@ Problem 4: Optical Flow Visualization
 Description:
 Plotted optical flow vectors on each frame of the video.
 Treated every previous frame, every 11th frame, and every 31st frame as a reference frame.
-Files:
-Optical_Flow*.m: MATLAB script for plotting optical flow vectors.
-Dataset: Video frames.
 
 
 Problem 5: Feature-Based Matching Object Detection
 
 Description:
 Ran feature-based matching object detection on the images from Problem 1.
-Files:
-Object_Detection.py: Python script for feature-based matching object detection.
-Dataset: Images from Problem 1.
 
 
 Problem 6: Bag of Features Object Recognition
@@ -60,9 +48,6 @@ Problem 6: Bag of Features Object Recognition
 Description:
 Implemented Bag of Features object recognition for household objects.
 Picked 5 object types and evaluate performance. Images provided.
-Files:
-Object_recognition.m: MATLAB script for Bag of Features object recognition.
-Dataset: Household objects images.
 
 
 Problem 7: Uncalibrated Stereo Rectification
@@ -70,15 +55,9 @@ Problem 7: Uncalibrated Stereo Rectification
 Description:
 Captured image pairs and rotate camera 2 towards camera 1 after translation.
 Used MATLAB's tutorial for uncalibrated stereo rectification.
-Files:
-StereoRectification.m: MATLAB script for uncalibrated stereo rectification.
-Dataset: Image pairs.
 
 Problem 8: Real-Time Object Tracker
 
 Description:
 Implemented a real-time object tracker with and without markers.
 Used QR codes or April tags (aruco markers) for marker-based tracking.
-Files:
-Q8_WithMarker.py: Python script for marker-based object tracking.
-Q8_WithoutMarker.py: Python script for markerless object tracking.
